@@ -4,63 +4,169 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout 
   title="SmartCheck | Randall Bonilla" 
-  description="SmartCheck: Sistema de gestión de tiempo y asistencia para empresas costarricenses desarrollado por Randall Bonilla."
+  description="SmartCheck Costa Rica: Sitio web profesional para servicio de inspección vehicular desarrollado por Randall Bonilla."
 >
   <div class="container mx-auto px-4 py-16">
     <!-- Encabezado del proyecto -->
     <div class="mb-12">
-      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">SmartCheck</h1>
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">SmartCheck Costa Rica</h1>
       <p class="text-xl text-gray-600 mb-6 max-w-3xl">
-        Plataforma de gestión de tiempo y asistencia para empresas costarricenses con marcaje biométrico y reportes avanzados.
+        Sitio web profesional para SmartCheck Costa Rica, empresa especializada en inspección vehicular con estándares de calidad internacional.
       </p>
       <div class="flex flex-wrap gap-3">
-        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">React</span>
-        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">TypeScript</span>
-        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">FastAPI</span>
-        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">PostgreSQL</span>
-        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Docker</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Astro</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">JavaScript</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">TailwindCSS</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Vercel</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">SEO</span>
       </div>
     </div>
 
     <!-- Vista previa del proyecto -->
     <div class="mb-16">
-      <div class="rounded-lg overflow-hidden shadow-lg bg-gradient-to-r from-primary to-primary-light h-96 flex items-center justify-center">
-        <span class="text-white text-4xl font-bold">SmartCheck Preview</span>
+      <div class="rounded-lg overflow-hidden shadow-xl">
+        <img 
+          src="/images/projects/SmartCheck.png" 
+          alt="Vista previa del sitio web SmartCheck Costa Rica"
+          class="w-full h-auto object-cover"
+          loading="lazy"
+        />
       </div>
     </div>
 
     <!-- Detalles del proyecto -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
       <div class="md:col-span-2">
-        <h2 class="text-2xl font-heading font-bold text-primary mb-6">Sobre el proyecto</h2>
+        <h2 class="text-3xl font-heading font-bold text-primary mb-8">Sobre el proyecto</h2>
         
-        <div class="prose prose-lg max-w-none">
-          <p>
-            SmartCheck es una solución integral de gestión de tiempo y asistencia diseñada específicamente para las necesidades de empresas costarricenses. El sistema permite a las organizaciones llevar un control preciso de la asistencia de sus empleados mediante marcaje biométrico, simplificando la administración de recursos humanos.
-          </p>
+        <div class="space-y-8">
+          <!-- Descripción principal -->
+          <div class="bg-gray-50 rounded-lg p-6 border-l-4 border-primary">
+            <p class="text-lg leading-relaxed text-gray-700">
+              SmartCheck Costa Rica es un sitio web corporativo desarrollado para una empresa líder en servicios de inspección vehicular. El proyecto se enfoca en brindar una presencia digital profesional que comunique <span class="font-semibold text-primary">confianza</span>, <span class="font-semibold text-primary">calidad</span> y <span class="font-semibold text-primary">experiencia</span> en el sector automotriz costarricense.
+            </p>
+          </div>
           
-          <h3>Desafío</h3>
-          <p>
-            Las empresas en Costa Rica necesitaban una solución que se ajustara a las normativas laborales locales y que fuera fácil de implementar. Los sistemas existentes eran costosos, complejos o no se adaptaban bien al mercado costarricense.
-          </p>
+          <!-- Desafío -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">El Desafío</h3>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <p class="text-gray-700 leading-relaxed">
+                SmartCheck necesitaba una presencia digital que reflejara su profesionalismo y experiencia en inspección vehicular. El sitio debía transmitir confianza a los usuarios, ser fácil de navegar y estar optimizado para motores de búsqueda para captar clientes potenciales en el mercado costarricense.
+              </p>
+            </div>
+          </div>
           
-          <h3>Solución</h3>
-          <p>
-            Desarrollé SmartCheck como una aplicación web moderna con una interfaz intuitiva que permite:
-          </p>
-          <ul>
-            <li>Marcaje de entrada/salida a través de dispositivos biométricos</li>
-            <li>Panel administrativo para gestionar empleados y departamentos</li>
-            <li>Generación de reportes personalizados de asistencia</li>
-            <li>Cálculo automático de horas trabajadas, extras y ausencias</li>
-            <li>Integración con sistemas de nómina existentes</li>
-            <li>Implementación de políticas de horario flexible</li>
-          </ul>
+          <!-- Solución -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">La Solución</h3>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Desarrollé un sitio web moderno y responsivo utilizando Astro para máximo rendimiento y SEO. El enfoque principal fue crear una experiencia de usuario excepcional que convirtiera visitantes en clientes.
+              </p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Diseño responsivo para todos los dispositivos</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Optimización SEO avanzada</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Carga ultra-rápida (&lt; 2 segundos)</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Formularios optimizados para conversión</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Secciones claras de servicios</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Blog integrado para contenido</span>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <h3>Resultados</h3>
-          <p>
-            SmartCheck ha sido implementado con éxito en varias empresas costarricenses, reduciendo el tiempo dedicado a la administración de asistencia en más de un 70% y mejorando la precisión de los registros de tiempo.
-          </p>
+          <!-- Resultados -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-accent-light rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Resultados Obtenidos</h3>
+            </div>
+            <div class="bg-gradient-to-r from-accent/5 to-primary/5 rounded-lg p-6 border border-accent/20">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">95+</div>
+                  <div class="text-sm text-gray-600">Score Lighthouse</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">&lt; 2s</div>
+                  <div class="text-sm text-gray-600">Tiempo de carga</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">100%</div>
+                  <div class="text-sm text-gray-600">Responsivo</div>
+                </div>
+              </div>
+              <p class="text-gray-700 leading-relaxed mt-4 text-center">
+                El sitio web ha mejorado significativamente la presencia digital de SmartCheck en el mercado costarricense, atrayendo más clientes potenciales y fortaleciendo su posicionamiento como líder en inspección vehicular.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -71,24 +177,23 @@ import Layout from '../../layouts/Layout.astro';
           <div>
             <h3 class="font-bold mb-2">Responsabilidades</h3>
             <ul class="list-disc list-inside space-y-1 text-gray-700">
-              <li>Diseño de arquitectura completa</li>
-              <li>Desarrollo frontend y backend</li>
-              <li>Implementación de API RESTful</li>
-              <li>Integración con dispositivos biométricos</li>
-              <li>Despliegue y mantenimiento</li>
+              <li>Diseño y desarrollo completo del sitio</li>
+              <li>Optimización SEO técnico y de contenido</li>
+              <li>Implementación de formularios de contacto</li>
+              <li>Optimización de rendimiento y Core Web Vitals</li>
+              <li>Despliegue y configuración en Vercel</li>
             </ul>
           </div>
           
           <div>
             <h3 class="font-bold mb-2">Tecnologías utilizadas</h3>
             <ul class="list-disc list-inside space-y-1 text-gray-700">
-              <li>React con TypeScript</li>
-              <li>FastAPI (Python)</li>
-              <li>PostgreSQL</li>
-              <li>Docker y Docker Compose</li>
-              <li>AWS (EC2, RDS, S3)</li>
+              <li>Astro (Framework estático)</li>
+              <li>JavaScript vanilla</li>
               <li>TailwindCSS</li>
-              <li>Redux Toolkit</li>
+              <li>Vercel (Despliegue)</li>
+              <li>Optimización de imágenes</li>
+              <li>Schema.org para SEO</li>
             </ul>
           </div>
           
