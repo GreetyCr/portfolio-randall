@@ -1,0 +1,273 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Netflix Clone | Randall Bonilla" 
+  description="Netflix Clone: Aplicación web que replica las funcionalidades principales de Netflix desarrollada por Randall Bonilla."
+>
+  <div class="container mx-auto px-4 py-16">
+    <!-- Encabezado del proyecto -->
+    <div class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">Netflix Clone</h1>
+      <p class="text-xl text-gray-600 mb-6 max-w-3xl">
+        Aplicación web responsive que replica las funcionalidades principales de Netflix, incluyendo autenticación de usuarios, navegación de películas y diseño moderno con un enfoque en la experiencia del usuario.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Next.js</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">React</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">TypeScript</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Tailwind CSS</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">Firebase</span>
+        <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">TMDB API</span>
+      </div>
+    </div>
+
+    <!-- Vista previa del proyecto -->
+    <div class="mb-16">
+      <div class="rounded-lg overflow-hidden shadow-xl">
+        <img 
+          src="/images/projects/NetflixClone.png" 
+          alt="Vista previa de la aplicación Netflix Clone"
+          class="w-full h-auto object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- Detalles del proyecto -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+      <div class="md:col-span-2">
+        <h2 class="text-3xl font-heading font-bold text-primary mb-8">Sobre el proyecto</h2>
+        
+        <div class="space-y-8">
+          <!-- Descripción principal -->
+          <div class="bg-gray-50 rounded-lg p-6 border-l-4 border-primary">
+            <p class="text-lg leading-relaxed text-gray-700">
+              Netflix Clone es una aplicación web que reproduce las funcionalidades principales de Netflix, desarrollada como proyecto educativo para demostrar habilidades en <span class="font-semibold text-primary">desarrollo full-stack</span>, <span class="font-semibold text-primary">autenticación de usuarios</span> y <span class="font-semibold text-primary">integración de APIs</span> externas.
+            </p>
+          </div>
+          
+          <!-- Desafío -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">El Desafío</h3>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <p class="text-gray-700 leading-relaxed">
+                Recrear la compleja interfaz de usuario de Netflix requería dominar múltiples aspectos: diseño responsive avanzado, manejo de estados complejos, autenticación segura, integración fluida con APIs externas y optimización del rendimiento para una experiencia de streaming fluida.
+              </p>
+            </div>
+          </div>
+          
+          <!-- Solución -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">La Solución</h3>
+            </div>
+            <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <p class="text-gray-700 leading-relaxed mb-4">
+                Desarrollé una aplicación completa usando Next.js y las mejores prácticas de desarrollo moderno, creando una experiencia que emula fielmente Netflix con funcionalidades adicionales para demostrar competencias técnicas avanzadas.
+              </p>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Autenticación completa con Firebase</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Integración con TMDB API</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Diseño responsive cross-platform</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Categorización avanzada de películas</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Server-side rendering con Next.js</span>
+                </div>
+                
+                <div class="flex items-start space-x-3">
+                  <div class="w-5 h-5 bg-primary rounded-full flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <span class="text-sm text-gray-600">Gestión de sesiones segura</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Resultados -->
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3">
+              <div class="w-8 h-8 bg-primary-light rounded-full flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-primary-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Resultados Obtenidos</h3>
+            </div>
+            <div class="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-6 border border-primary/20">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">93.9%</div>
+                  <div class="text-sm text-gray-600">TypeScript</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">Cross-platform</div>
+                  <div class="text-sm text-gray-600">Compatibilidad</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-primary mb-1">Firebase Auth</div>
+                  <div class="text-sm text-gray-600">Autenticación</div>
+                </div>
+              </div>
+              <p class="text-gray-700 leading-relaxed mt-4 text-center">
+                El proyecto demuestra competencias avanzadas en desarrollo de aplicaciones web modernas, incluyendo autenticación, APIs externas, diseño responsive y optimización de rendimiento para crear experiencias de usuario convincentes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div>
+        <h2 class="text-2xl font-heading font-bold text-primary mb-6">Detalles técnicos</h2>
+        
+        <div class="space-y-6">
+          <div>
+            <h3 class="font-bold mb-2">Responsabilidades</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Arquitectura de aplicación full-stack</li>
+              <li>Implementación de autenticación Firebase</li>
+              <li>Integración con TMDB API</li>
+              <li>Desarrollo de UI responsive</li>
+              <li>Gestión de estado con React hooks</li>
+              <li>Optimización de rendimiento</li>
+              <li>Despliegue en Vercel</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold mb-2">Stack tecnológico</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Next.js (React Framework)</li>
+              <li>TypeScript (93.9% del código)</li>
+              <li>Tailwind CSS (responsive design)</li>
+              <li>Firebase Authentication</li>
+              <li>TMDB API (base de datos de películas)</li>
+              <li>React Hooks (state management)</li>
+              <li>Vercel (despliegue y hosting)</li>
+              <li>ESLint (calidad de código)</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold mb-2">Características clave</h3>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+              <li>Login/Signup seguro</li>
+              <li>Navegación por categorías</li>
+              <li>Búsqueda de películas</li>
+              <li>Detalles de películas</li>
+              <li>Reproducción de trailers</li>
+              <li>Responsive para todos los dispositivos</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold mb-2">Enlaces</h3>
+            <div class="space-y-3">
+              <a 
+                href="https://github.com/GreetyCr/netflix-clone-tw" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center text-primary hover:text-primary-dark transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="mr-2">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                Ver repositorio
+              </a>
+              <a 
+                href="https://netflix-clone-tw.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center text-primary hover:text-primary-dark transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Ver demo en vivo
+              </a>
+              <div class="text-sm text-gray-500 bg-gray-50 p-3 rounded">
+                <strong>Credenciales de prueba:</strong><br>
+                Email: randallgbc@gmail.com<br>
+                Password: 123123
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Navegación entre proyectos -->
+    <div class="border-t border-gray-200 pt-8 mt-12">
+      <div class="flex flex-col sm:flex-row justify-between items-center">
+        <a href="/proyectos/budget-tracker" class="mb-4 sm:mb-0 flex items-center text-primary hover:text-primary-dark transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+            <path d="m15 18-6-6 6-6"></path>
+          </svg>
+          Proyecto anterior
+        </a>
+        <a href="/proyectos" class="flex items-center text-primary hover:text-primary-dark transition-colors">
+          Volver a proyectos
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
+            <path d="m9 18 6-6-6-6"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout> 
