@@ -2,109 +2,207 @@
 import Layout from '../../layouts/Layout.astro';
 import SkillBadge from '../../components/SkillBadge.astro';
 
-// Definir habilidades por categoría
+// Definir habilidades por categoría con niveles ajustados
 const frontendSkills = [
   { name: "React", level: 5 },
+  { name: "JavaScript", level: 5 },
   { name: "TypeScript", level: 4 },
   { name: "Next.js", level: 4 },
-  { name: "Astro", level: 3 },
+  { name: "Astro", level: 4 },
   { name: "TailwindCSS", level: 5 },
   { name: "HTML/CSS", level: 5 }
 ];
 
 const backendSkills = [
-  { name: "FastAPI", level: 4 },
+  { name: "Python", level: 2 },
+  { name: "FastAPI", level: 2 },
   { name: "Node.js", level: 3 },
-  { name: "Python", level: 4 },
   { name: "SQL", level: 3 },
-  { name: "Supabase", level: 4 }
+  { name: "Supabase", level: 4 },
+  { name: "Prisma", level: 3 }
 ];
 
 const otherSkills = [
-  { name: "Git/GitHub", level: 4 },
-  { name: "Docker", level: 3 },
+  { name: "Git/GitHub", level: 5 },
+  { name: "Vercel", level: 4 },
+  { name: "Firebase", level: 4 },
   { name: "UI/UX Design", level: 3 },
-  { name: "Agile/Scrum", level: 3 }
+  { name: "Bolt.new", level: 4 },
+  { name: "Cursor AI", level: 4 }
 ];
 ---
 
 <Layout 
   title="Sobre Mí | Randall Bonilla" 
-  description="Conoce más sobre Randall Bonilla, Ingeniero en Software especializado en desarrollo web moderno."
+  description="Conoce más sobre Randall Bonilla, Ingeniero en Software especializado en desarrollo web moderno y próximo a graduarse."
 >
   <section class="py-16 md:py-24">
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-8">
-        Sobre Mí
-      </h1>
+      <!-- Encabezado mejorado -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-6xl font-heading font-bold text-primary mb-4">
+          Sobre Mí
+        </h1>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          Desarrollador Frontend apasionado por crear soluciones tecnológicas que impacten positivamente
+        </p>
+      </div>
       
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
-        <div class="md:col-span-7">
-          <h2 class="text-2xl font-bold mb-4">¿Quién soy?</h2>
-          <p class="text-lg mb-4">
-            Soy Randall Bonilla, un ingeniero en software próximo a graduarme en diciembre de 2025. 
-            Mi pasión es crear soluciones tecnológicas que impacten positivamente en las personas y empresas.
-          </p>
-          <p class="text-lg mb-8">
-            Me especializo en desarrollo web frontend con React, TypeScript y herramientas modernas, 
-            pero también tengo experiencia con backend usando Python y bases de datos. Disfruto construir 
-            aplicaciones completas, desde la interfaz de usuario hasta la infraestructura.
-          </p>
-          
-          <h2 class="text-2xl font-bold mb-4">Mi enfoque</h2>
-          <p class="text-lg mb-4">
-            Creo en escribir código limpio, mantenible y escalable. Me gusta seguir buenas prácticas
-            y estándares de la industria, pero siempre estoy abierto a aprender nuevas tecnologías y métodos.
-          </p>
-          <p class="text-lg">
-            Valoro el trabajo en equipo, la comunicación clara y la entrega de valor real. Mi objetivo
-            es crear soluciones que sean tanto técnicamente sólidas como fáciles de usar para los usuarios finales.
-          </p>
+      <!-- Sección principal rediseñada -->
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 mb-16">
+        <!-- Contenido principal - más espacio -->
+        <div class="lg:col-span-3">
+          <div class="bg-white rounded-xl shadow-lg p-8 h-full">
+            <h2 class="text-3xl font-bold mb-6 text-primary flex items-center">
+              <span class="w-2 h-8 bg-gradient-to-b from-primary to-accent rounded-full mr-4"></span>
+              ¿Quién soy?
+            </h2>
+            
+            <div class="space-y-6 text-lg leading-relaxed">
+              <p class="text-gray-700">
+                Soy <span class="font-bold text-primary">Randall Bonilla</span>, un <strong>soon-to-graduate</strong> en Ingeniería en Software con graduación estimada para diciembre de 2025. 
+                Tengo una mezcla poco común de profundidad técnica, carisma y conciencia crítica que me distingue del "dev promedio".
+              </p>
+              
+              <div class="bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg p-6 border-l-4 border-primary">
+                <p class="text-gray-700">
+                  Me especializo en <strong class="text-primary">desarrollo Frontend</strong> con React, JavaScript, TypeScript y herramientas modernas como Next.js y Astro. 
+                  Actualmente estoy expandiendo mis conocimientos en <strong class="text-accent">Python</strong> 🐍 para crear soluciones más completas y robustas.
+                </p>
+              </div>
+              
+              <p class="text-gray-700">
+                Donde muchos improvisan, yo pienso. Donde muchos imitan, yo diseño desde el porqué. 
+                No estoy interesado en impresionar, estoy interesado en <strong class="text-primary">construir soluciones reales</strong>.
+              </p>
+            </div>
+            
+            <div class="mt-8 pt-6 border-t border-gray-200">
+              <h3 class="text-2xl font-bold mb-4 text-accent flex items-center">
+                <span class="w-2 h-6 bg-gradient-to-b from-accent to-primary rounded-full mr-3"></span>
+                Mi filosofía de desarrollo
+              </h3>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-primary/5 rounded-lg p-4">
+                  <p class="text-gray-700">
+                    Creo en el <strong class="text-primary">trabajo bien hecho</strong>, la mejora constante, y que la inteligencia artificial debería ser un colega, no una muleta.
+                  </p>
+                </div>
+                <div class="bg-accent/5 rounded-lg p-4">
+                  <p class="text-gray-700">
+                    Prefiero <strong class="text-accent">claridad sobre sobrecarga visual</strong> - minimalismo honesto antes que "wow sin contexto".
+                  </p>
+                </div>
+              </div>
+              
+              <p class="text-gray-700 mt-4 italic">
+                Veo el desarrollo como una herramienta para elevar ideas humanas. No es solo código, es criterio.
+              </p>
+            </div>
+          </div>
         </div>
         
-        <div class="md:col-span-5 bg-white rounded-lg shadow-md p-6">
-          <div class="aspect-square bg-gradient-to-br from-primary to-accent opacity-80 rounded-lg flex items-center justify-center mb-6">
-            <span class="text-white text-5xl font-bold">RB</span>
+        <!-- Tarjeta de perfil - más compacta pero atractiva -->
+        <div class="lg:col-span-2">
+          <div class="bg-white rounded-xl shadow-lg p-6 sticky top-8">
+            <!-- Avatar mejorado -->
+            <div class="relative mb-6">
+              <div class="w-32 h-32 mx-auto bg-gradient-to-br from-primary via-accent to-primary rounded-full flex items-center justify-center shadow-xl relative overflow-hidden">
+                <span class="text-white text-4xl font-bold z-10">RB</span>
+                <div class="absolute inset-0 bg-gradient-to-br from-primary/80 to-accent/80 animate-pulse"></div>
+              </div>
+              <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
+                <div class="bg-green-500 w-6 h-6 rounded-full border-4 border-white flex items-center justify-center">
+                  <span class="text-white text-xs">✓</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Información de contacto mejorada -->
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-primary/5 transition-colors">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <span class="font-medium">San José, Costa Rica</span>
+              </div>
+              
+              <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-primary/5 transition-colors">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                </div>
+                <span class="font-medium text-sm">greetysoftwarejs@gmail.com</span>
+              </div>
+              
+              <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-primary/5 transition-colors">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <span class="font-medium text-sm">LinkedIn Profile</span>
+              </div>
+              
+              <div class="flex items-center gap-3 p-3 bg-gray-50 rounded-lg hover:bg-primary/5 transition-colors">
+                <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="text-primary">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <span class="font-medium">github.com/GreetyCr</span>
+              </div>
+
+              <div class="flex items-center gap-3 p-3 bg-gradient-to-r from-accent/10 to-primary/10 rounded-lg">
+                <div class="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                  </svg>
+                </div>
+                <span class="font-medium">Gym & Tenis 🎾</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Proyectos Actuales -->
+      <div class="mb-16 bg-gradient-to-r from-primary/5 to-accent/5 rounded-xl p-8">
+        <h2 class="text-3xl font-heading font-bold text-primary mb-6 flex items-center">
+          <span class="w-3 h-8 bg-gradient-to-b from-primary to-accent rounded-full mr-4"></span>
+          Proyectos Actuales
+        </h2>
+        <p class="text-lg mb-6 text-gray-700">
+          Actualmente estoy desarrollando proyectos reales que reflejan mi evolución profesional:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-bold text-primary mb-2">SmartCheck</h3>
+            <p class="text-gray-600 mb-3">Aplicación web para gestión inteligente de inventarios con análisis predictivo.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded">React</span>
+              <span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded">TypeScript</span>
+              <span class="px-2 py-1 bg-primary/10 text-primary text-sm rounded">Supabase</span>
+            </div>
           </div>
           
-          <div class="space-y-3">
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>San José, Costa Rica</span>
-            </div>
-            
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-              </svg>
-              <span>+506 8888-8888</span>
-            </div>
-            
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-              </svg>
-              <span>randall.bonilla@example.com</span>
-            </div>
-            
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect width="4" height="12" x="2" y="9"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-              <span>linkedin.com/in/randallbonilla</span>
-            </div>
-            
-            <div class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-              </svg>
-              <span>github.com/GreetyCr</span>
+          <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-bold text-accent mb-2">NailCare</h3>
+            <p class="text-gray-600 mb-3">Sistema de gestión para salones de belleza con agenda inteligente.</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 bg-accent/10 text-accent text-sm rounded">Next.js</span>
+              <span class="px-2 py-1 bg-accent/10 text-accent text-sm rounded">TailwindCSS</span>
+              <span class="px-2 py-1 bg-accent/10 text-accent text-sm rounded">FastAPI</span>
             </div>
           </div>
         </div>
@@ -112,11 +210,14 @@ const otherSkills = [
       
       <!-- Habilidades -->
       <div class="mb-16">
-        <h2 class="text-3xl font-heading font-bold text-primary mb-8">Habilidades</h2>
+        <h2 class="text-3xl font-heading font-bold text-primary mb-8 flex items-center">
+          <span class="w-3 h-8 bg-gradient-to-b from-primary to-accent rounded-full mr-4"></span>
+          Habilidades Técnicas
+        </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Frontend -->
-          <div>
+          <div class="bg-white rounded-lg p-6 shadow-md">
             <h3 class="text-xl font-bold mb-4 text-primary">Frontend</h3>
             <div class="space-y-3">
               {frontendSkills.map(skill => (
@@ -126,8 +227,8 @@ const otherSkills = [
           </div>
           
           <!-- Backend -->
-          <div>
-            <h3 class="text-xl font-bold mb-4 text-accent">Backend</h3>
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-4 text-accent">Backend & Bases de Datos</h3>
             <div class="space-y-3">
               {backendSkills.map(skill => (
                 <SkillBadge name={skill.name} level={skill.level} color="accent" />
@@ -135,9 +236,9 @@ const otherSkills = [
             </div>
           </div>
           
-          <!-- Otras Habilidades -->
-          <div>
-            <h3 class="text-xl font-bold mb-4 text-gray-700">Otras Habilidades</h3>
+          <!-- Herramientas -->
+          <div class="bg-white rounded-lg p-6 shadow-md">
+            <h3 class="text-xl font-bold mb-4 text-gray-700">Herramientas & Otros</h3>
             <div class="space-y-3">
               {otherSkills.map(skill => (
                 <SkillBadge name={skill.name} level={skill.level} color="gray" />
@@ -150,44 +251,66 @@ const otherSkills = [
       <!-- Educación y Experiencia -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Educación -->
-        <div>
-          <h2 class="text-3xl font-heading font-bold text-primary mb-6">Educación</h2>
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h2 class="text-3xl font-heading font-bold text-primary mb-6 flex items-center">
+            <span class="w-3 h-6 bg-gradient-to-b from-primary to-accent rounded-full mr-3"></span>
+            Educación
+          </h2>
           
           <div class="border-l-4 border-primary pl-4 pb-8 relative">
             <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-primary rounded-full"></div>
             <h3 class="text-xl font-bold">Ingeniería en Software</h3>
-            <p class="text-gray-600 mb-2">Universidad XYZ, Costa Rica</p>
-            <p class="text-sm text-gray-500">Diciembre 2025 (Esperado)</p>
-            <p class="mt-2">Especialización en desarrollo web y aplicaciones móviles.</p>
+            <p class="text-gray-600 mb-2">Universidad, Costa Rica</p>
+            <p class="text-sm text-gray-500">Diciembre 2025 (Graduación estimada)</p>
+            <p class="mt-2">Especialización en desarrollo web y aplicaciones modernas. Enfoque en arquitectura de software y buenas prácticas.</p>
+          </div>
+          
+          <div class="border-l-4 border-primary pl-4 pb-8 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-primary rounded-full"></div>
+            <h3 class="text-xl font-bold">Frontend Simplified Bootcamp</h3>
+            <p class="text-gray-600 mb-2">Frontend Simplified</p>
+            <p class="text-sm text-gray-500">2022</p>
+            <p class="mt-2">Bootcamp intensivo especializado en React, JavaScript moderno y desarrollo frontend profesional.</p>
           </div>
           
           <div class="border-l-4 border-primary pl-4 relative">
             <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-primary rounded-full"></div>
-            <h3 class="text-xl font-bold">Certificación Frontend Developer</h3>
-            <p class="text-gray-600 mb-2">Platzi</p>
-            <p class="text-sm text-gray-500">2023</p>
-            <p class="mt-2">Especialización en React, TypeScript y arquitectura frontend moderna.</p>
+            <h3 class="text-xl font-bold">Aprendizaje Continuo</h3>
+            <p class="text-gray-600 mb-2">Autodidacta & Plataformas Online</p>
+            <p class="text-sm text-gray-500">2022 - Presente</p>
+            <p class="mt-2">Constante actualización en tecnologías frontend, Python, y herramientas de desarrollo modernas.</p>
           </div>
         </div>
         
         <!-- Experiencia -->
-        <div>
-          <h2 class="text-3xl font-heading font-bold text-accent mb-6">Experiencia</h2>
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h2 class="text-3xl font-heading font-bold text-accent mb-6 flex items-center">
+            <span class="w-3 h-6 bg-gradient-to-b from-accent to-primary rounded-full mr-3"></span>
+            Experiencia Laboral
+          </h2>
           
           <div class="border-l-4 border-accent pl-4 pb-8 relative">
             <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-accent rounded-full"></div>
-            <h3 class="text-xl font-bold">Desarrollador Frontend</h3>
-            <p class="text-gray-600 mb-2">Empresa ABC, San José</p>
+            <h3 class="text-xl font-bold">Desarrollador Frontend Freelance</h3>
+            <p class="text-gray-600 mb-2">Proyectos Independientes</p>
             <p class="text-sm text-gray-500">2023 - Presente</p>
-            <p class="mt-2">Desarrollo de aplicaciones web con React, TypeScript y TailwindCSS. Implementación de interfaces de usuario responsivas y accesibles.</p>
+            <p class="mt-2">Desarrollo de aplicaciones web completas con React, Next.js y TypeScript. Enfoque en UX/UI y rendimiento.</p>
+          </div>
+          
+          <div class="border-l-4 border-accent pl-4 pb-8 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-accent rounded-full"></div>
+            <h3 class="text-xl font-bold">Customer Service Representative</h3>
+            <p class="text-gray-600 mb-2">Capital One, CSS Corp, Sykes</p>
+            <p class="text-sm text-gray-500">2021 - 2023</p>
+            <p class="mt-2">Experiencia en atención al cliente que me enseñó la importancia de la comunicación clara y la resolución de problemas.</p>
           </div>
           
           <div class="border-l-4 border-accent pl-4 relative">
             <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-accent rounded-full"></div>
-            <h3 class="text-xl font-bold">Pasante de Desarrollo</h3>
-            <p class="text-gray-600 mb-2">Startup XYZ, San José</p>
-            <p class="text-sm text-gray-500">2022 - 2023</p>
-            <p class="mt-2">Trabajé en el desarrollo de una aplicación web para gestión de inventario utilizando tecnologías modernas de frontend y backend.</p>
+            <h3 class="text-xl font-bold">Construcción de Presencia Digital</h3>
+            <p class="text-gray-600 mb-2">Desarrollo Personal</p>
+            <p class="text-sm text-gray-500">2024 - Presente</p>
+            <p class="mt-2">Creando mi presencia profesional digital con proyectos reales y portafolio que refleja mi crecimiento auténtico.</p>
           </div>
         </div>
       </div>

@@ -4,152 +4,249 @@ import Layout from '../../layouts/Layout.astro';
 
 <Layout 
   title="Contacto | Randall Bonilla" 
-  description="Ponte en contacto con Randall Bonilla para colaboraciones, proyectos o consultas profesionales."
+  description="Conecta conmigo para oportunidades laborales, colaboraciones o consultas profesionales. Email, WhatsApp y teléfono disponibles."
 >
-  <section class="py-16 md:py-24">
+  <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-8">
-        Contacto
-      </h1>
-      <p class="text-lg mb-12 max-w-3xl">
-        ¿Interesado en trabajar juntos o tienes alguna pregunta? No dudes en ponerte
-        en contacto conmigo a través del formulario o utilizando mis redes sociales.
-      </p>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <!-- Formulario de contacto -->
-        <div>
-          <h2 class="text-2xl font-bold mb-6">Envíame un mensaje</h2>
-          
-          <form class="space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                required
-              />
-            </div>
-            
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                required
-              />
-            </div>
-            
-            <div>
-              <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Asunto</label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                required
-              />
-            </div>
-            
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary focus:border-primary"
-                required
-              ></textarea>
-            </div>
-            
-            <button
-              type="submit"
-              class="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary-dark transition-colors"
-            >
-              Enviar mensaje
-            </button>
-          </form>
+      <!-- Encabezado atractivo -->
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full mb-6 shadow-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </div>
         
-        <!-- Información de contacto -->
-        <div>
-          <h2 class="text-2xl font-bold mb-6">Información de contacto</h2>
-          
-          <div class="space-y-6">
-            <div class="flex items-start">
-              <div class="flex-shrink-0 w-12 h-12 bg-primary-light rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        <h1 class="text-4xl md:text-6xl font-heading font-bold text-primary mb-4">
+          ¡Hablemos!
+        </h1>
+        <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          ¿Buscas un desarrollador frontend comprometido y en crecimiento? 
+          <br class="hidden md:block">
+          <span class="font-semibold text-primary">Estoy disponible para nuevas oportunidades</span> 
+          y me encantaría conocer tu proyecto.
+        </p>
+      </div>
+
+      <!-- Métodos de contacto principales -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Email -->
+        <div class="group">
+          <a 
+            href="mailto:greetysoftwarejs@gmail.com?subject=Oportunidad%20Laboral%20-%20Contacto%20desde%20Portfolio&body=Hola%20Randall,%0A%0AMe%20interesa%20conocer%20más%20sobre%20tu%20perfil%20profesional.%0A%0ASaludos,"
+            class="block bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-primary/20"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-bold">Email</h3>
-                <a href="mailto:greetysoftwarejs@gmail.com" class="text-accent hover:text-accent-dark">
-                  greetysoftwarejs@gmail.com
-                </a>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="flex-shrink-0 w-12 h-12 bg-primary-light rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                </svg>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-bold">LinkedIn</h3>
-                <a href="https://www.linkedin.com/in/randallbonilla/" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-dark">
-                  linkedin.com/in/randallbonilla
-                </a>
-              </div>
-            </div>
-            
-            <div class="flex items-start">
-              <div class="flex-shrink-0 w-12 h-12 bg-primary-light rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-bold">GitHub</h3>
-                <a href="https://github.com/GreetyCr" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-accent-dark">
-                  github.com/GreetyCr
-                </a>
-              </div>
-            </div>
-            
-            <div class="mt-12 p-6 bg-gray-50 rounded-lg border border-gray-200">
-              <h3 class="text-lg font-bold mb-2">Disponibilidad</h3>
-              <p>
-                Actualmente estoy disponible para proyectos freelance y oportunidades laborales 
-                a tiempo completo a partir de diciembre 2025.
+              
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Email Profesional</h3>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                La forma más directa y profesional de contactarme. Respondo en menos de 24 horas.
               </p>
+              
+              <div class="bg-blue-50 rounded-lg p-3 mb-4 w-full">
+                <p class="font-semibold text-blue-700 text-sm">greetysoftwarejs@gmail.com</p>
+              </div>
+              
+              <div class="flex items-center text-blue-600 font-medium group-hover:text-blue-700 transition-colors">
+                <span>Enviar Email</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="group">
+          <a 
+            href="https://wa.me/50683316420?text=Hola%20Randall!%20Vi%20tu%20portafolio%20y%20me%20interesa%20conocer%20más%20sobre%20tu%20perfil%20profesional.%20¿Podríamos%20conversar?"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-green-200"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">WhatsApp</h3>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                ¿Prefieres una conversación más directa? Escríbeme por WhatsApp para una respuesta rápida.
+              </p>
+              
+              <div class="bg-green-50 rounded-lg p-3 mb-4 w-full">
+                <p class="font-semibold text-green-700 text-sm">+506 8331-6420</p>
+              </div>
+              
+              <div class="flex items-center text-green-600 font-medium group-hover:text-green-700 transition-colors">
+                <span>Abrir WhatsApp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Teléfono -->
+        <div class="group">
+          <a 
+            href="tel:+50683316420"
+            class="block bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-transparent hover:border-accent/20"
+          >
+            <div class="flex flex-col items-center text-center">
+              <div class="w-16 h-16 bg-gradient-to-br from-accent to-orange-500 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              
+              <h3 class="text-2xl font-bold text-gray-800 mb-3">Llamada Directa</h3>
+              <p class="text-gray-600 mb-4 leading-relaxed">
+                Para conversaciones más personales o entrevistas. Disponible en horario laboral.
+              </p>
+              
+              <div class="bg-orange-50 rounded-lg p-3 mb-4 w-full">
+                <p class="font-semibold text-orange-700 text-sm">+506 8331-6420</p>
+              </div>
+              
+              <div class="flex items-center text-accent font-medium group-hover:text-orange-600 transition-colors">
+                <span>Llamar Ahora</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+                  <path d="M5 12h14"></path>
+                  <path d="M12 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sección de disponibilidad y redes sociales -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <!-- Disponibilidad -->
+        <div class="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12,6 12,12 16,14"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-primary">Mi Disponibilidad</h3>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-green-500 rounded-full mr-3 animate-pulse"></div>
+              <span class="text-gray-700"><strong>Proyectos Freelance:</strong> Disponible inmediatamente</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+              <span class="text-gray-700"><strong>Tiempo Completo:</strong> Disponible inmediatamente</span>
             </div>
           </div>
+          
+        </div>
+
+        <!-- Redes Sociales -->
+        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-br from-gray-600 to-gray-700 rounded-full flex items-center justify-center mr-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800">Sígueme También</h3>
+          </div>
+          
+          <div class="space-y-4">
+            <a 
+              href="https://www.linkedin.com/in/randall-bonilla-cordero-8653a6220" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors group"
+            >
+              <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800 group-hover:text-blue-600">LinkedIn</p>
+                <p class="text-sm text-gray-600">Perfil profesional y experiencia</p>
+              </div>
+            </a>
+            
+            <a 
+              href="https://github.com/GreetyCr" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors group"
+            >
+              <div class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-gray-800 group-hover:text-gray-600">GitHub</p>
+                <p class="text-sm text-gray-600">Código y proyectos open source</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action Final -->
+      <div class="text-center bg-gradient-to-r from-primary to-accent rounded-2xl p-12 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          ¿Listo para trabajar juntos?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          No importa si es un proyecto pequeño o una oportunidad a largo plazo, 
+          me encanta colaborar en ideas que generen impacto real.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="mailto:greetysoftwarejs@gmail.com?subject=¡Hablemos!%20-%20Oportunidad%20desde%20Portfolio"
+            class="inline-flex items-center px-8 py-4 bg-white text-primary font-bold rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Enviar Email
+          </a>
+          
+          <a 
+            href="https://wa.me/50670123456?text=¡Hola%20Randall!%20Me%20interesa%20tu%20perfil%20profesional"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="mr-2">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+            </svg>
+            WhatsApp
+          </a>
         </div>
       </div>
     </div>
   </section>
-</Layout>
-
-<script>
-  // Script para manejar el envío del formulario
-  const contactForm = document.querySelector('form');
-  
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // Aquí se podría implementar la lógica de envío del formulario
-      // Por ejemplo, usando FormSubmit, Netlify Forms, o un servicio similar
-      
-      // Simulamos una respuesta exitosa
-      alert('¡Gracias por tu mensaje! Te responderé lo antes posible.');
-      contactForm.reset();
-    });
-  }
-</script> 
+</Layout> 
