@@ -1,0 +1,196 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SkillBadge from '../../components/SkillBadge.astro';
+
+// Definir habilidades por categoría
+const frontendSkills = [
+  { name: "React", level: 5 },
+  { name: "TypeScript", level: 4 },
+  { name: "Next.js", level: 4 },
+  { name: "Astro", level: 3 },
+  { name: "TailwindCSS", level: 5 },
+  { name: "HTML/CSS", level: 5 }
+];
+
+const backendSkills = [
+  { name: "FastAPI", level: 4 },
+  { name: "Node.js", level: 3 },
+  { name: "Python", level: 4 },
+  { name: "SQL", level: 3 },
+  { name: "Supabase", level: 4 }
+];
+
+const otherSkills = [
+  { name: "Git/GitHub", level: 4 },
+  { name: "Docker", level: 3 },
+  { name: "UI/UX Design", level: 3 },
+  { name: "Agile/Scrum", level: 3 }
+];
+---
+
+<Layout 
+  title="Sobre Mí | Randall Bonilla" 
+  description="Conoce más sobre Randall Bonilla, Ingeniero en Software especializado en desarrollo web moderno."
+>
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-8">
+        Sobre Mí
+      </h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
+        <div class="md:col-span-7">
+          <h2 class="text-2xl font-bold mb-4">¿Quién soy?</h2>
+          <p class="text-lg mb-4">
+            Soy Randall Bonilla, un ingeniero en software próximo a graduarme en diciembre de 2025. 
+            Mi pasión es crear soluciones tecnológicas que impacten positivamente en las personas y empresas.
+          </p>
+          <p class="text-lg mb-8">
+            Me especializo en desarrollo web frontend con React, TypeScript y herramientas modernas, 
+            pero también tengo experiencia con backend usando Python y bases de datos. Disfruto construir 
+            aplicaciones completas, desde la interfaz de usuario hasta la infraestructura.
+          </p>
+          
+          <h2 class="text-2xl font-bold mb-4">Mi enfoque</h2>
+          <p class="text-lg mb-4">
+            Creo en escribir código limpio, mantenible y escalable. Me gusta seguir buenas prácticas
+            y estándares de la industria, pero siempre estoy abierto a aprender nuevas tecnologías y métodos.
+          </p>
+          <p class="text-lg">
+            Valoro el trabajo en equipo, la comunicación clara y la entrega de valor real. Mi objetivo
+            es crear soluciones que sean tanto técnicamente sólidas como fáciles de usar para los usuarios finales.
+          </p>
+        </div>
+        
+        <div class="md:col-span-5 bg-white rounded-lg shadow-md p-6">
+          <div class="aspect-square bg-gradient-to-br from-primary to-accent opacity-80 rounded-lg flex items-center justify-center mb-6">
+            <span class="text-white text-5xl font-bold">RB</span>
+          </div>
+          
+          <div class="space-y-3">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>San José, Costa Rica</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+506 8888-8888</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span>randall.bonilla@example.com</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect width="4" height="12" x="2" y="9"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span>linkedin.com/in/randallbonilla</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-primary">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+              <span>github.com/GreetyCr</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Habilidades -->
+      <div class="mb-16">
+        <h2 class="text-3xl font-heading font-bold text-primary mb-8">Habilidades</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Frontend -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-primary">Frontend</h3>
+            <div class="space-y-3">
+              {frontendSkills.map(skill => (
+                <SkillBadge name={skill.name} level={skill.level} color="primary" />
+              ))}
+            </div>
+          </div>
+          
+          <!-- Backend -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-accent">Backend</h3>
+            <div class="space-y-3">
+              {backendSkills.map(skill => (
+                <SkillBadge name={skill.name} level={skill.level} color="accent" />
+              ))}
+            </div>
+          </div>
+          
+          <!-- Otras Habilidades -->
+          <div>
+            <h3 class="text-xl font-bold mb-4 text-gray-700">Otras Habilidades</h3>
+            <div class="space-y-3">
+              {otherSkills.map(skill => (
+                <SkillBadge name={skill.name} level={skill.level} color="gray" />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Educación y Experiencia -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Educación -->
+        <div>
+          <h2 class="text-3xl font-heading font-bold text-primary mb-6">Educación</h2>
+          
+          <div class="border-l-4 border-primary pl-4 pb-8 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-primary rounded-full"></div>
+            <h3 class="text-xl font-bold">Ingeniería en Software</h3>
+            <p class="text-gray-600 mb-2">Universidad XYZ, Costa Rica</p>
+            <p class="text-sm text-gray-500">Diciembre 2025 (Esperado)</p>
+            <p class="mt-2">Especialización en desarrollo web y aplicaciones móviles.</p>
+          </div>
+          
+          <div class="border-l-4 border-primary pl-4 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-primary rounded-full"></div>
+            <h3 class="text-xl font-bold">Certificación Frontend Developer</h3>
+            <p class="text-gray-600 mb-2">Platzi</p>
+            <p class="text-sm text-gray-500">2023</p>
+            <p class="mt-2">Especialización en React, TypeScript y arquitectura frontend moderna.</p>
+          </div>
+        </div>
+        
+        <!-- Experiencia -->
+        <div>
+          <h2 class="text-3xl font-heading font-bold text-accent mb-6">Experiencia</h2>
+          
+          <div class="border-l-4 border-accent pl-4 pb-8 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-accent rounded-full"></div>
+            <h3 class="text-xl font-bold">Desarrollador Frontend</h3>
+            <p class="text-gray-600 mb-2">Empresa ABC, San José</p>
+            <p class="text-sm text-gray-500">2023 - Presente</p>
+            <p class="mt-2">Desarrollo de aplicaciones web con React, TypeScript y TailwindCSS. Implementación de interfaces de usuario responsivas y accesibles.</p>
+          </div>
+          
+          <div class="border-l-4 border-accent pl-4 relative">
+            <div class="absolute -left-[11px] top-0 w-[18px] h-[18px] bg-accent rounded-full"></div>
+            <h3 class="text-xl font-bold">Pasante de Desarrollo</h3>
+            <p class="text-gray-600 mb-2">Startup XYZ, San José</p>
+            <p class="text-sm text-gray-500">2022 - 2023</p>
+            <p class="mt-2">Trabajé en el desarrollo de una aplicación web para gestión de inventario utilizando tecnologías modernas de frontend y backend.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout> 

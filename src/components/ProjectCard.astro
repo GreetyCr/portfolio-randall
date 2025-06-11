@@ -1,0 +1,64 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  image?: string;
+  color?: 'primary' | 'accent' | string;
+  link: string;
+}
+
+const { 
+  title, 
+  description, 
+  tags, 
+  image, 
+  color = 'primary',
+  link 
+} = Astro.props;
+
+const bgGradient = color === 'primary' 
+  ? 'from-primary to-primary-light' 
+  : 'from-accent to-accent-light';
+
+const textColor = color === 'primary' ? 'text-primary' : 'text-accent';
+const bgColor = color === 'primary' ? 'bg-primary/10' : 'bg-accent/10';
+const hoverColor = color === 'primary' ? 'hover:text-primary-dark' : 'hover:text-accent-dark';
+---
+
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+  <div class={`h-48 bg-gradient-to-r ${bgGradient} flex items-center justify-center`}>
+    {image ? (
+      <img 
+        src={image} 
+        alt={`Imagen del proyecto ${title}`} 
+        class="w-full h-full object-cover"
+      />
+    ) : (
+      <span class="text-white text-2xl font-bold">{title}</span>
+    )}
+  </div>
+  
+  <div class="p-6">
+    <h3 class={`text-xl font-bold ${textColor} mb-2`}>{title}</h3>
+    <p class="text-gray-600 mb-4 line-clamp-3">{description}</p>
+    
+    <div class="flex flex-wrap gap-2 mb-6">
+      {tags.map(tag => (
+        <span class={`px-2 py-1 ${bgColor} ${textColor} rounded-full text-xs font-medium`}>
+          {tag}
+        </span>
+      ))}
+    </div>
+    
+    <a 
+      href={link} 
+      class={`inline-flex items-center font-medium ${textColor} ${hoverColor} transition-colors`}
+    >
+      Ver detalles
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-1">
+        <path d="m9 18 6-6-6-6"></path>
+      </svg>
+    </a>
+  </div>
+</div> 
